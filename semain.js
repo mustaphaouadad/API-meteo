@@ -1,15 +1,21 @@
 const apiKey ="f0997021dcb5911521e2ab4b21382604";
 const apiUrl ="https://api.openweathermap.org/data/2.5/forecast?q=";
 
+semain();
+function semain() {
+    
+ let city =JSON.parse(localStorage.getItem("city"));
 
+ console.log(city);
+ 
 
-    fetch(apiUrl + "london" + `&appid=${apiKey}`+"&units=metric")
+    fetch(apiUrl + city + `&appid=${apiKey}`+"&units=metric")
     .then(response=>response.json())
     .then(data => {
         console.log(data);
      
         //  jour 1
-        document.getElementById("temp1").innerHTML = data.list[0].main.temp+ "°C";
+        document.getElementById("temp1").innerHTML = data.list[3].main.temp+ "°C";
         document.getElementById("weather-icon1").src="https://openweathermap.org/img/wn/"+data.list[0].weather[0].icon+"@2x.png" ;
 
          //  jour 2
@@ -29,7 +35,7 @@ const apiUrl ="https://api.openweathermap.org/data/2.5/forecast?q=";
              document.getElementById("weather-icon5").src="https://openweathermap.org/img/wn/"+data.list[28].weather[0].icon+"@2x.png" ;
     })
     .catch();
-    
+} 
 
      
 
