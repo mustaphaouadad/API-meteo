@@ -25,3 +25,6 @@ async function checkweather(city) {
     document.querySelector(".weather").style.display = "block";
 
 }
+searchBox.addEventListener("click", ()=>{
+    checkweather(searchBox.value);
+})
