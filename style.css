@@ -93,3 +93,13 @@ body{
     display: none;
 
 }
+
+
+.jour{
+    width: 30px;
+    font-size: 10px;
+}
+
+.week div{
+    width: fit-content;
+}
