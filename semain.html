@@ -9,41 +9,41 @@
 </head>
 <body>
    
-    <section class="card week-list mb-3 p-5 m-4 w-50  ms-auto me-auto " onload="semain();">
+    <section class="card week-list mb-3 p-5 m-4 w-100  ms-auto me-auto ">
 
                 <div class="week  d-flex justify-content-between  ms-auto me-auto">
                         <!-- card now  -->
                            <h4 class="p-2  ">Thursday</h4>
-                           <img class="p-1" src="https://openweathermap.org/img/wn/${data['list'][0]['weather'][0]['icon']}@2x.png">
-                           <h5 class="p-1 ms-3">23°</h5>
+                           <img id="weather-icon1" class="p-1" >
+                           <h5 id="temp1" class="p-1 ms-3">23°</h5>
                  </div>
 
                      <div class="week  d-flex justify-content-between  ms-auto me-auto">
                         <!-- card now  -->
                            <h4 class="p-2 ps-4"> Friday </h4>
-                           <img class="p-1" src="https://openweathermap.org/img/wn/${data['list'][6]['weather'][0]['icon']}@2x.png">
-                           <h5 class="p-1 ms-3">43°</h5>
+                           <img id="weather-icon2" class="p-2" >
+                           <h5 id="temp2" class="p-2 ms-3">43°</h5>
                  </div>
 
                    <div class="week  d-flex justify-content-between  ms-auto me-auto">
                         <!-- card now  -->
                            <h4 class="p-2">Saturday</h4>
-                           <img class="p-1" src="https://openweathermap.org/img/wn/${data['list'][15]['weather'][0]['icon']}@2x.png">
-                           <h5 class="p-1 ms-3">23°</h5>
+                           <img id="weather-icon3"  class="p-3">
+                           <h5 id="temp3" class="p-3 ms-3">23°</h5>
                  </div>
 
                    <div class="week  d-flex justify-content-between  ms-auto me-auto">
                         <!-- card now  -->
                            <h4 class="p-2">Sanday</h4>
-                           <img class="p-1" src="https://openweathermap.org/img/wn/${data['list'][24]['weather'][0]['icon']}@2x.png">
-                           <h5 class="p-1 ms-3">23°</h5>
+                           <img id="weather-icon4" class="p-4" >
+                           <h5 id="temp4"class="p-1 ms-3">23°</h5>
                  </div>
 
                    <div class="week  d-flex justify-content-between  ms-auto me-auto">
                         <!-- card now  -->
                            <h4 class="p-2">Monday</h4>
-                           <img class="p-1" src="https://openweathermap.org/img/wn/${data['list'][31]['weather'][0]['icon']}@2x.png">
-                           <h5 class="p-1 ms-3">22°</h5>
+                           <img id="weather-icon5" class="p-5">
+                           <h5 id="temp5"class="p-1 ms-3">22°</h5>
                  </div>
                 
            
@@ -53,6 +53,6 @@
             
             <button class="btn btn-primary" type="button" onclick="document.location='index.html'">Button</button>
         </div>
-        <script src="app.js"></script>
+        <script src="semain.js"></script>
 </body>
 </html>

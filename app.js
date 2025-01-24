@@ -32,9 +32,4 @@ searchBox.addEventListener("click", ()=>{
 
 
 
-function semain() {
-    console.log("semain");
-    
-    
-}
 }
