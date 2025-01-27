@@ -9,7 +9,7 @@
     <title>APP-meteo</title>
 </head>
 <body>
-    <div class="card">
+    <div class="card1">
         <div class="search">
             <input id="input" type="text" placeholder="entrer city name" spellcheck="false">
             <button  onclick="jour();"><i class="bi bi-search"></i></button>
@@ -41,14 +41,46 @@
                     </div>
                 </div>       
             </div>
-        </div>
+        </div>  
+   </div>
+   <!-- ----------------------------------------- -->
+    <div class="NM">
+   <section class="card week-list mb-3 p-5 m-4 w-100 ms-auto me-auto">
+    <div class="week-list-container d-flex justify-content-center gap-4 flex-wrap">
+      <div class="week d-flex flex-column align-items-center text-center">
+        <h4 class="p-2">Thursday</h4>
+        <img id="weather-icon1" class="p-1" alt="weather-icon">
+        <h5 id="temp1" class="p-1 ms-3">23°</h5>
+      </div>
+  
+    <div class="week d-flex flex-column align-items-center text-center">
+        <h4 class="p-2">Friday</h4>
+        <img id="weather-icon2" class="p-1" alt="weather-icon">
+        <h5 id="temp2" class="p-1 ms-3">43°</h5>
+      </div>
+  
+    <div class="week d-flex flex-column align-items-center text-center">
+        <h4 class="p-2">Saturday</h4>
+        <img id="weather-icon3" class="p-1" alt="weather-icon">
+        <h5 id="temp3" class="p-1 ms-3">23°</h5>
+      </div>
+  
+    <div class="week d-flex flex-column align-items-center text-center">
+        <h4 class="p-2">Sunday</h4>
+        <img id="weather-icon4" class="p-1" alt="weather-icon">
+        <h5 id="temp4" class="p-1 ms-3">23°</h5>
+      </div>
+  
+    <div class="week d-flex flex-column align-items-center text-center">
+        <h4 class="p-2">Monday</h4>
+        <img id="weather-icon5" class="p-1" alt="weather-icon">
+        <h5 id="temp5" class="p-1 ms-3">22°</h5>
+      </div>
+    </div>
+  </section>
 
-        <!-- --------------------------------------- -->
-        <div class="d-grid gap-2 d-md-block mt-2">
-            
-            <button class="btn btn-primary" type="button" onclick="document.location='semain.html'">Button</button>
-          </div
 </div>
+  
 
 
     <script src="app.js"></script>
